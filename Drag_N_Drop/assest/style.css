@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 190, 197)  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; 
+}
+
+.empty {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: solid black;
+    margin: 25px;
+}
+
+.fill {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(173, 125, 173);
+}
+
+.hold {
+    border: solid 5px white;
+}
+
+.hovered {
+    background-color: #333 ;
+    border-color: white;
+    border-style: dashed;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
