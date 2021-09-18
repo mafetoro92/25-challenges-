@@ -42,19 +42,20 @@ body {
   margin: 0;
   opacity: 0;
 }
-
+/* when is active just we need to show big one card */
 .panel.active {
     flex:5;
 }
-
+/* we active opacity for to see the title */
 .panel.active h3 {
     opacity: 1;
 }
-
+/* movil when de screen will be with 480px the media query will be activate */
 @media (max-width: 480px) {
   .container {
       width: 100vw;
   }
+  /* just 3 panels will be showing */
   .panel:nth-of-type(4),.panel:nth-of-type(5) {
     display: none;
   }
